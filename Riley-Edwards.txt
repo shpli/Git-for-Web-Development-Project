@@ -1,39 +1,83 @@
+https://codepen.io/shpli/pen/YzGXMWo 
+
 1. What is Semantic HTML? 
+1a. Semantic html is 
     2. What is HTML used for? 
     2a. HTML is a markup language used to create the working front-end of a webpage. 
     3. What is an attribute and where do we put it? 
+    3a. Attributes are additions that can be placed with tags to specify what the tag is utilizing. For example, if one wanted to put an image on a webpage, they can use the format <a href="URL here">"hyperlink text"</a>.
     4. What is the h1 tag used for? How many times should I use it on a page?
+    4a. h1 is the main and biggest header of a webpage, it should ideally only be used once as it is the main header, and no other should demand as much attention as it.
     5. Name two tags that have required attributes
+    5a. <a></a> and <img></img>
     6. What do we put in the head of our HTML document? 
+    6a. The title of the webpage and any terms that could help search engines find the webpage easier, like an author or other introductory information.
     7. What is an id? 
+    7a. An id is a way to point to one specific html element on a page, and only that one element. 
     8. What elements can I add an id to? 
-    9. How many times can I use the same id on a page? 
+    8a. You can add an id to any ONE html element. 
+    9. How many times can I use the same id on a page?
+    9a. Once for each individual id.  
     10. What is a class? 
+    10a. A class is a pointer much like an id, except you can use class multiple times specifying different groups of elements under the same class.
     11. What elements can I add a class to? 
+    11a. You can add a class to any element.
     12. How many times can I use the same class on a page? 
+    12a. As many times as you'd like. 
     13. How do I get my link to open in a new tab?
+    13a. Using the extra attribute target="_blank" forces a link made with the <a> tag to open in a new tab.
     14. What is the alt attribute in the image tag used for? 
+    14a. If the image is unable to load for any reason, the text displayed with the alt tag will be displayed instead.
     15. How do I reference an id?
+    15a. You can create and reference and id for an element with #. 
     16. What is the difference between a section and a div
+    16a. Functionally they work the same way as they are both container functions, but sections make markers for search engines and document outlines.
     17. What is CSS used for? 
+    17a. CSS is used to style text and other elements made with html.
     18. How to we select an element? Example - every h2 on the page
+    18a. h2{}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    19a. A class allows you to specify multiple groups of elements and can be reused throughout the webpage. An id can only be used for one specific html element. For example, if I wanted to make every paragraph of text into 20px font size green text I would prefer to use classes for all of them. If I just needed a specific image formatted properly, I could give it an ID and style it that way.
     20. How do we select classes in CSS?
+    20a. If you use a period you can specify a specific class, for example if I wanted to select a class named section-2 under a div tag I could format it div.section-2{}
     21. How do we select a p element with a single class of “human””?
+    21a. p.human{}
     22. What is a parent child selector? When would this be useful? 
+    22a. A parent child selector allows you to modify all children of a "parent" element, this can be useful when trying to modify all individual items under a <ul> tag.
     23. How do you select all links within a div with the class of sidebar?
+    23a. div.sidebar:link{}
     24. What is a pseudo selector?
+    24a. A pseudo selector is a conditional selector that can be tacked onto classes and other html elements. For example, you can change the color of text once a user hovers over it with a :hover pseudo selector.
     25. What do we use the change the spacing between lines?
+    25a. You can use the line-height property to modify line spacing.
     26. What do we use to change the spacing between letters?
+    26a. You can use the letter-spacing property to modify letter spacing.
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    27a. You can use the text-transform command to modify elements into capitals, lowercase, or to capitalize. 
     28. How do I add a 1px border around my div that is dotted and black?
+    28a. div{border-style:dotted; border-width:1px; border-color:black; }
     29. How do I select everything on the page? 
+    29a. Using an asterisk, you can reference everything on a page.
     30. How do I write a comment in CSS?
     30a: Writing comments in CSS can be done with /* "comment" */
     31. How do I find out what file I am in, when I am using the command line? 
+    31a. You can use the pwd command.
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    32a. You can use the ls command.
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    33a. You can remove a file using the rm command, but you have to be careful because there is no confirmation prompt.
     34. Why should I use version control? 
+    34a. Version control allows for easier debugging and collaboration between developers.
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
+    35a. A general rule is every 20 minutes or whenever a major change is made.
+    36. What is the command we would use to push our repo up to github?
+    36a. You can use git push -u origin branch-name to push the repo.  
     37. Walk me through Lambda's git flow. 
+    37a. First fork the original repository from the Lambda School account. 
+    Use the cd command to enter into wherever you'd like the repository to save. 
+    Use git clone (your copied repository) to pull the repository into the directory
+    Use git checkout -b 'branch-name' in order to create your own branch
+    Now you have your own branch of the repository and can proceed to work on it. 
+    Every 20 minutes or whenever a major change is made you should then use git add . in order to save the changes to your local repository.
+    Then use git commit -m "your message here" in order to package up the local repository to be sent as a pull request
+    Finally, use git push -u origin 'branch-name' in order to finally push the repository to github
