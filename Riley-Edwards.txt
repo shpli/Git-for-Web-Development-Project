@@ -1,7 +1,7 @@
 https://codepen.io/shpli/pen/YzGXMWo 
 
 1. What is Semantic HTML? 
-1a. Semantic html is 
+1a. Semantic html is a group of html elements that are 'self-defined' as in they work on their own without needing any classification. 
     2. What is HTML used for? 
     2a. HTML is a markup language used to create the working front-end of a webpage. 
     3. What is an attribute and where do we put it? 
